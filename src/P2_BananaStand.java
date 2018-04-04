@@ -1,7 +1,7 @@
 /*
 	ISYS 320
-	Name(s):
-	Date: 
+	Name(s): Rona Davis
+	Date: March 31, 2018
 	quote.substring(0,)
 	Call String methods on the String object referred to by the `quote` variable to create and output the new String object "BANANA". 
 	
@@ -20,10 +20,15 @@ public class P2_BananaStand {
 		System.out.println(quote.indexOf(20));	
 		System.out.println(quote.toLowerCase());
 		System.out.println(quote.replaceAll(quote, quote2));
-	//	String lasthalf = quote.substring (21,41);
+		quote3 = lasthalf(quote);
+		System.out.println(quote3);
 	}
-	public static void show(String quote) {
+	public static String lasthalf (String arg1){
+		int l = arg1.length();
+		l = l/2;
+		return arg1.substring(l-1,arg1.length()-1);
 	}
+
 	
 	
 }
